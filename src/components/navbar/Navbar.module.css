@@ -1,0 +1,837 @@
+.headerSection {
+  height: 65px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 80px;
+  position: sticky;
+  top: 20px;
+
+  border-bottom: 0.2px solid rgb(197, 194, 194);
+  background-color: #ffffffa1;
+  /* font-weight:600; */
+}
+
+.logoSection {
+  height: 60px;
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logoSection img {
+  height: 100%;
+  width: 100%;
+}
+
+.loginBtn {
+  font-family: "Urbanist", sans-serif;
+  font-weight: 600;
+  border-radius: 20px;
+  padding: 12px 20px;
+  color: #ffffff;
+  background: linear-gradient(95.45deg, #1c40f2 98.23%, #0082f8 0.64%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  letter-spacing: 2px;
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+  cursor: pointer;
+}
+
+.loginBtn:hover {
+  transition: all 0.3s ease-in;
+  background: linear-gradient(95.45deg, #3151df 99.23%, #0082f8 0.7%);
+  -webkit-box-shadow: 1px 1px 5px 3px rgba(26, 67, 242, 0.19);
+  -moz-box-shadow: 1px 1px 5px 3px rgba(26, 67, 242, 0.19);
+  box-shadow: 1px 1px 5px 3px rgba(26, 67, 242, 0.19);
+}
+
+.loginSection a {
+  text-decoration: none;
+  font-size: 14px;
+  color: #fff;
+}
+
+.menuSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  letter-spacing: 1.2px;
+  color: #001529;
+  /* font-family: "Urbanist", sans-serif; */
+}
+
+.menuSection a {
+  margin: 0px 20px;
+  font-size: 15px;
+  text-decoration: none;
+  /* color: #011349; */
+}
+/* ================================================================= */
+
+.hostingDropdown {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+  position: relative;
+  margin: 0px 20px;
+}
+
+/* ============================ */
+.hostingOption {
+  height: auto;
+  width: 600px;
+  flex-wrap: wrap;
+  position: absolute;
+  top: 40px;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 12px;
+  gap: 3px;
+  background: #ffffff;
+  border: 0.5px solid rgba(241, 238, 238, 0.89);
+  border-radius: 4px;
+}
+
+.hostingSection {
+  display: flex;
+  width: 250px;
+  flex-grow: 1;
+  flex-basis: 200;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 10px;
+
+  cursor: pointer;
+}
+
+.hostingOption h6 {
+  font-size: 14px;
+  font-weight: 600;
+  word-spacing: -1px;
+}
+
+.hostingOption p {
+  font-size: 13px;
+  padding: 3px 0px;
+  font-family: "Urbanist", sans-serif;
+  word-spacing: -1px;
+  font-weight: 550;
+}
+
+.hostingSection:hover {
+  background-color: rgba(241, 238, 238, 0.39);
+  transition: 350ms ease-in;
+  padding: 10px 15px;
+  border-radius: 5px;
+}
+
+.domainDropdown {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1px;
+  font-size: 15px;
+
+  position: relative;
+  margin: 0px 20px;
+}
+
+.domainOption {
+  height: auto;
+  width: 600px;
+  flex-wrap: wrap;
+  position: absolute;
+  top: 40px;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 12px;
+  gap: 3px;
+  background: #ffffff;
+  border: 0.5px solid rgba(241, 238, 238, 0.89);
+  border-radius: 4px;
+}
+.domainOptionOne {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.domainSection {
+  display: flex;
+  width: 240px;
+  align-items: center;
+  gap: 10px;
+  flex-grow: 1;
+  flex-direction: 250;
+  padding: 10px 10px;
+  background-color: #fff;
+  cursor: pointer;
+}
+.domainInfo h6 {
+  font-size: 13px;
+}
+
+.domainInfo p {
+  font-size: 13px;
+  font-weight: 550;
+  padding: 3px 0px;
+}
+
+.domainOptionTwo {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.domainPriceSection {
+  padding: 6px;
+  background-color: #dfdcdc23;
+  margin: 10px 10px;
+  text-align: center;
+  font-size: 14px;
+  line-height: 18px;
+  flex-grow: 1;
+  flex-basis: 200;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.domainPriceSection h2 {
+  padding: 2px 0px;
+  font-size: 12px;
+  font-weight: bolder;
+}
+
+.domainPriceSection span {
+  color: hsl(283, 90%, 4%);
+  font-size: 12px;
+}
+
+.domainPriceSection p {
+  color: #1184f0;
+  padding: 2px 0px;
+  font-size: 12px;
+  font-style: italic;
+}
+
+.domainPriceSection:hover {
+  background-color: rgba(241, 238, 238, 0.815);
+  transition: 350ms ease-in;
+  margin: 10px 11px;
+
+  border-radius: 4px;
+}
+
+.moreDropdown {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1px;
+  font-size: 15px;
+  position: relative;
+  margin: 0px 20px;
+
+  cursor: pointer;
+}
+.menuDropContainer{
+  height: auto;
+  width: 300px;
+  background-color: #ffbc00;
+  position: absolute;
+  top: 40px;
+  border-radius: 4px;
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.menuDropOption{
+   flex-grow: 1;
+   flex-basis: 200;
+}
+
+.domainSection:hover {
+  background-color: rgba(241, 238, 238, 0.39);
+  transition: 350ms ease-in;
+  padding: 10px 15px;
+  border-radius: 5px;
+}
+
+.sideMenu {
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sideMenu .material-symbols-outlined {
+  font-size: 0px;
+}
+
+.sideMenu {
+  display: none;
+}
+
+@media (max-width: 1250px) {
+  .headerSection {
+    height: 70px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 20px;
+    position: sticky;
+    top: 20px;
+    background-color: transparent;
+  }
+
+  .logoSection {
+    height: 58px;
+    width: 230px;
+  }
+
+  .logoSection img {
+    height: 100%;
+    width: 100%;
+  }
+
+  .loginSection {
+    height: auto;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+  }
+  .loginBtn {
+    background-color: #ffbc00;
+    height: auto;
+    padding: 9px 30px;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3px;
+  }
+
+  .loginSection a {
+    text-decoration: none;
+    font-size: 18px;
+  }
+
+  .menuSection {
+    display: flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .menuSection a {
+    font-size: 18px;
+    margin: 0px 10px;
+    text-decoration: none;
+    color: black;
+  }
+
+  .hostingDropdown {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 18px;
+    position: relative;
+    margin: 0px 10px;
+
+    cursor: pointer;
+  }
+
+  .hostingDropdown div {
+    height: 150px;
+    width: 600px;
+    background-color: #ffbc00;
+    position: absolute;
+    top: 48px;
+  }
+
+  .resellerDropdown {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3px;
+    font-size: 18px;
+    position: relative;
+    margin: 0px 10px;
+
+    cursor: pointer;
+  }
+
+  .resellerDropdown div {
+    height: 150px;
+    width: 600px;
+    background-color: #ffbc00;
+    position: absolute;
+    top: 48px;
+  }
+
+  .domainDropdown {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3px;
+    font-size: 18px;
+    position: relative;
+    margin: 0px 10px;
+
+    cursor: pointer;
+  }
+
+  .domainDropdown div {
+    height: 150px;
+    width: 600px;
+    background-color: #ffbc00;
+    position: absolute;
+    top: 48px;
+  }
+  .moreDropdown {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3px;
+    font-size: 18px;
+    position: relative;
+    margin: 0px 10px;
+
+    cursor: pointer;
+  }
+
+  .moreDropdown div {
+    height: 150px;
+    width: 600px;
+    background-color: #ffbc00;
+    position: absolute;
+    top: 48px;
+  }
+
+  .sideMenu {
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .sideMenu .material-symbols-outlined {
+    font-size: 0px;
+  }
+
+  .sideMenu {
+    display: none;
+  }
+}
+
+@media (max-width: 1000px) {
+  .headerSection {
+    height: 60px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 20px;
+    position: sticky;
+    top: 20px;
+    background-color: transparent;
+  }
+
+  .logoSection {
+    height: 40px;
+    width: 160px;
+  }
+
+  .logoSection img {
+    height: 100%;
+    width: 100%;
+  }
+
+  .loginSection {
+    height: auto;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+  }
+  .loginBtn {
+    background-color: #ffbc00;
+    height: auto;
+    padding: 8px 25px;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3px;
+  }
+
+  .loginSection a {
+    text-decoration: none;
+    font-size: 16px;
+  }
+
+  .menuSection {
+    display: flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .menuSection a {
+    font-size: 16px;
+    margin: 0px 10px;
+    text-decoration: none;
+    color: black;
+  }
+
+  .hostingDropdown {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 16px;
+    position: relative;
+    margin: 0px 10px;
+
+    cursor: pointer;
+  }
+
+  .hostingDropdown div {
+    height: auto;
+    width: auto;
+    background-color: #ffbc00;
+    position: absolute;
+    top: 43px;
+  }
+
+  .resellerDropdown {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3px;
+    font-size: 16px;
+    position: relative;
+    margin: 0px 10px;
+
+    cursor: pointer;
+  }
+
+  .resellerDropdown div {
+    height: 150px;
+    width: 600px;
+    background-color: #ffbc00;
+    position: absolute;
+    top: 43px;
+  }
+
+  .domainDropdown {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3px;
+    font-size: 16px;
+    position: relative;
+    margin: 0px 10px;
+
+    cursor: pointer;
+  }
+
+  .domainDropdown div {
+    height: 150px;
+    width: 600px;
+    background-color: #ffbc00;
+    position: absolute;
+    top: 43px;
+  }
+
+  .sideMenu {
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .sideMenu .material-symbols-outlined {
+    font-size: 0px;
+  }
+
+  .sideMenu {
+    display: none;
+  }
+}
+
+@media (max-width: 850px) {
+  .headerSection {
+    height: 60px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 10px;
+    position: sticky;
+    top: 20px;
+    background-color: transparent;
+  }
+
+  .logoSection {
+    height: 40px;
+    width: 160px;
+  }
+
+  .logoSection img {
+    height: 100%;
+    width: 100%;
+  }
+
+  .loginSection {
+    height: auto;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+  }
+  .loginBtn {
+    background-color: #ffbc00;
+    height: auto;
+    padding: 8px 23px;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3px;
+  }
+
+  .loginSection a {
+    text-decoration: none;
+    font-size: 15px;
+  }
+
+  .menuSection {
+    display: flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .menuSection a {
+    font-size: 15px;
+    margin: 0px 8px;
+    text-decoration: none;
+    color: black;
+  }
+
+  .hostingDropdown {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 15px;
+    position: relative;
+    margin: 0px 8px;
+
+    cursor: pointer;
+  }
+
+  .hostingDropdown div {
+    height: 150px;
+    width: 600px;
+    background-color: #ffbc00;
+    position: absolute;
+    top: 50px;
+  }
+
+  .resellerDropdown {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3px;
+    font-size: 15px;
+    position: relative;
+    margin: 0px 8px;
+
+    cursor: pointer;
+  }
+
+  .resellerDropdown div {
+    height: auto;
+    width: auto;
+    background-color: #ffbc00;
+    position: absolute;
+    top: 50px;
+  }
+
+  .domainDropdown {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3px;
+    font-size: 15px;
+    position: relative;
+    margin: 0px 8px;
+
+    cursor: pointer;
+  }
+
+  .domainDropdown div {
+    height: 100%;
+    width: 100%;
+    background-color: #ffbc00;
+    position: absolute;
+    top: 50px;
+  }
+
+  .sideMenu {
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .sideMenu .material-symbols-outlined {
+    font-size: 0px;
+  }
+
+  .sideMenu {
+    display: none;
+  }
+}
+
+@media (max-width: 800px) {
+  .headerSection {
+    height: 55px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 15px;
+    position: sticky;
+    top: 20px;
+    background-color: transparent;
+  }
+
+  .logoSection {
+    height: 47px;
+    width: 180px;
+  }
+  .menuSection {
+    display: block;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .logoSection img {
+    height: 100%;
+    width: 100%;
+  }
+
+  .loginSection {
+    height: auto;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+  }
+  .loginBtn {
+    background-color: #ffbc00;
+    height: auto;
+    padding: 8px 23px;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3px;
+    display: none;
+  }
+
+  .loginSection a {
+    text-decoration: none;
+    font-size: 14px;
+  }
+
+  .menuSection {
+    display: none;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .sideMenu {
+    display: flex;
+    background-color: #001529;
+    color: #fdfdfd;
+    border-radius: 3px;
+    padding: 2px 4px;
+  }
+  .reslogoSection {
+    width: 100%;
+    height: 55px;
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(250, 248, 248, 0.993);
+    position: sticky;
+    top: 0;
+    z-index: 999;
+  }
+  .reslogoSection div {
+    height: 42px;
+    width: 156px;
+  }
+
+  .reslogoSection img {
+    height: 100%;
+    width: 100%;
+  }
+  .arrowbackIcon {
+    color: hsl(0, 0%, 100%);
+    height: 30px;
+    width: 30px;
+    background-color: #001529;
+    padding: 6px 10px;
+    border-radius: 4px;
+  }
+  .arrowbackIcon span {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .menuContainar {
+    height: 84%;
+    overflow: hidden;
+  }
+
+  .theme {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 13px 15px;
+    background-color: #001529;
+    color: #fdfdfd;
+    margin-top: 2px;
+    border-radius: 2px 8px 8px 0px;
+    font-size: 15px;
+    margin-bottom: 10px;
+  }
+}
